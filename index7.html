@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-7</title>
+</head>
+
+<body>
+    <!-- 07. Create an array of 10 numbers and print only the numbers greater than 50. -->
+
+    <h1>Print only the numbers greater than 50</h1>
+    <p>[13, 64, 45, 89, 23, 56, 90, 34, 78, 10]</p>
+    <h2 id="hello"></h2>
+
+    <script>
+
+        let num = [13, 64, 45, 89, 23, 56, 90, 34, 78, 10];
+
+        let result = "";
+
+        num.forEach((num) => {
+            if (num > 50) {
+                result += num + "<br>";
+            }
+        })
+
+        console.log(result);
+
+        document.getElementById('hello').innerHTML = `Number: ${result}`;
+
+
+
+    </script>
+</body>
+
+</html>

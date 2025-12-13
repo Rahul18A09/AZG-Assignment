@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-9</title>
+</head>
+
+<body>
+    <!-- 09. Create a function that takes a string and returns the number of vowels in it. -->
+
+    <h1>A function that takes a string and returns the number of vowels in it</h1>
+    <p>String = "Hello World"</p>
+    <h2 id="hello"></h2>
+
+    <script>
+
+   
+        function countVowels() {
+            let str = "Hello World";
+            let count = 0;
+            const vowels = "aeiouAEIOU";
+
+            for (let char of str) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+        console.log(countVowels());
+
+        document.getElementById('hello').innerHTML = `The Number of Vowels: ${countVowels()}`;
+
+    </script>
+</body>
+
+</html>

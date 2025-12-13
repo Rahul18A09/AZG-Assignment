@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-6</title>
+</head>
+<body>
+    <!-- 06. Find the smallest number in an array of 10 numbers. -->
+
+    <h1>The smallest number in an array of 10 numbers</h1>
+    <p>[13, 43, 7, 23, 89, 95, 34, 68]</p>
+    <h2 id="hello"></h2>
+
+    <script>
+        let arr =  [13, 43, 7, 23, 89, 95, 34, 68];
+
+        let smallest  = arr[0];
+
+        for(let i = 0; i < arr.length ; i++){
+            if(arr[i] < smallest){
+                smallest  = arr[i];
+            }
+        }
+
+        console.log(smallest);
+
+        document.getElementById('hello').innerHTML = `Smallest Number: ${smallest}`;
+        
+    </script>
+</body>
+</html>

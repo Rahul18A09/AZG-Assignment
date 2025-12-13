@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-8</title>
+</head>
+
+<body>
+    <!-- 08. Create a function that returns the average of an array of numbers. -->
+
+    <h1>A function that returns the average of an array of numbers</h1>
+    <p> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</p>
+    <h2 id="hello"></h2>
+
+    <script>
+        let numbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+        function average() {
+            let sum = 0;
+
+            for (let i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+
+            return sum / (numbers.length);
+        }
+
+        console.log(average(numbers));
+
+
+        document.getElementById('hello').innerHTML = `Average: ${average()}`;
+
+    </script>
+</body>
+
+</html>

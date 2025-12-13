@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-10</title>
+</head>
+
+<body>
+    <!-- 10. Create a function that takes two numbers and returns the GCD / HCF. -->
+
+    <h1>A function that takes two numbers and returns the GCD / HCF</h1>
+    <h2 id="hello"></h2>
+
+    <script>
+
+        function findHCF(a, b) {
+
+            let hcf = 1;
+
+            for (let i = 1; i <= a && i <= b; i++) {
+                if (a % i === 0 && b % i === 0) {
+                    hcf = i;
+                }
+            }
+
+            return hcf;
+
+
+        }
+
+        console.log(findHCF(24, 36));
+
+        document.getElementById('hello').innerHTML = `The HCF is: ${findHCF(24, 36)}`;
+
+    </script>
+</body>
+
+</html>

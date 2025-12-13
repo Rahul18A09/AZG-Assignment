@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-3</title>
+</head>
+
+<body>
+    <!-- 03. Count how many even numbers are in an array. -->
+
+    <h1>How many even numbers are in an array.</h1>
+    <p>[10, 15, 20, 25, 30, 35]</p>
+    <h2 id="hello"></h2>
+
+
+    <script>
+
+        const numbers = [10, 15, 20, 25, 30, 35];
+
+        const evenCount = numbers.filter(num => num % 2 === 0).length
+
+        console.log(evenCount);
+
+        document.getElementById('hello').innerHTML = `Even Numbers: ${evenCount}`;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-5</title>
+</head>
+
+<body>
+    <!-- 05. Find the largest number in an array of 10 numbers. -->
+
+    <h1>The largest number in an array of 10 numbers</h1>
+    <p>[13, 43, 7, 23, 89, 95, 34, 68]</p>
+    <h2 id="hello"></h2>
+
+    <script>
+
+        let arr = [13, 43, 7, 23, 89, 95, 34, 68];
+
+        let largest = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+
+        console.log(largest);
+
+        document.getElementById("hello").innerHTML = `Largest Number: ${largest}`;
+
+
+        // let arr = [13, 43, 7, 23, 89, 95, 34, 68];
+
+        // let largest = Math.max(...arr);
+
+        // console.log(largest);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-11</title>
+</head>
+
+<body>
+    <!-- 11. Create a function that takes a number and checks if it is a perfect square. -->
+
+    <h1>A function that takes a number and checks if it is a perfect square</h1>
+    <p>Taken number is:16</p>
+    <h2 id="hello"></h2>
+
+    <script>
+
+        let num = 16;
+
+        function isPerfectSquare() {
+            if (num < 0) return false;
+
+            let sqrt = Math.sqrt(num);
+            return Number.isInteger(sqrt);
+
+        }
+
+        console.log(isPerfectSquare());
+
+        document.getElementById('hello').innerHTML = `A Number is Perfect Square: ${isPerfectSquare()}`;
+
+    </script>
+</body>
+
+</html>

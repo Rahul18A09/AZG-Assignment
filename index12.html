@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-12</title>
+</head>
+<body>
+    <!-- 12. Create a function that prints the Fibonacci series of n terms. -->
+
+    <h1>A function that prints the Fibonacci series of n terms</h1>
+    <h2 id="hello"></h2>
+
+    <script>
+
+        function printFibonacci(n){
+            let a = 0, b = 1;
+
+            for (let i = 1; i <= n; i++){
+                console.log(a);
+
+                let next = a + b;
+                a = b;
+                b = next
+                
+            }
+        }
+
+        printFibonacci(10);
+    </script>
+</body>
+</html>

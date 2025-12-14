@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-14</title>
+</head>
+
+<body>
+    <!-- 14. Create an object student with name, marks, course. Print all key-value pairs. -->
+
+    <h1>An Object of student</h1>
+    <div id="hello"></div>
+
+    <script>
+        const student = {
+            name: "Rahul",
+            marks: 95,
+            course: "Web Development"
+        };
+
+        for (let key in student) {
+            console.log(key + " : " + student[key]);
+
+        }
+
+        
+    </script>
+</body>const output = document.getElementById("hello");
+
+        for (let key in student) {
+            output.innerHTML += `<p><b>${key}</b> : ${student[key]}</P>`;
+        }
+
+</html>

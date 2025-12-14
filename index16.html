@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-16</title>
+</head>
+
+<body>
+    <!-- 16. Create an array of 5 student objects. Print the name of the student with the highest marks. -->
+
+    <h1>An array of 5 student objects</h1>
+    <div>an array of Student Object: let students = [
+        {name: "Rahul", marks: 85},
+        {name: "Asha", marks: 92},
+        {name: "Priya" , marks: 88},
+        {name: "Sneha", marks: 95}
+        ];
+    </div>
+    <br>
+    <div id="hello"></div>
+
+
+    <script>
+        let students = [
+            { name: "Rahul", marks: 85 },
+            { name: "Asha", marks: 92 },
+            { name: "Priya", marks: 88 },
+            { name: "Sneha", marks: 95 }
+        ];
+
+        let topStudent = students[0];
+
+        for (let i = 1; i < students.length; i++) {
+            if (students[i].marks > topStudent.marks) {
+                topStudent = students[i];
+            }
+        }
+
+        console.log("Student with highest marks:", topStudent.name);
+
+        document.getElementById('hello').innerHTML = "Top Student: " + topStudent.name;
+
+    </script>
+</body>
+
+</html>

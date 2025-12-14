@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-15</title>
+</head>
+
+<body>
+    <!-- 15. Add a new property grade to the student object using code (not directly). -->
+
+    <h1>Add a new property</h1>
+    <div id="hello"></div>
+
+    <script>
+        const student = {
+            name: "Rahul",
+            marks: 95,
+            course: "Web Development"
+        };
+
+        // Add new Property
+
+        student.grade = "A";
+
+        for (let key in student) {
+            console.log(key + " : " + student[key]);
+
+        }
+
+        const output = document.getElementById('hello');
+
+        for (let key in student) {
+            output.innerHTML = `<p><b>${key}</b> : ${student[key]}</P>`;
+        }
+
+    </script>
+</body>
+
+</html>

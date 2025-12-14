@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-18</title>
+</head>
+
+<body>
+    <!-- 18. Create a function that checks if two strings are anagrams. -->
+
+    <h1>A function that checks if two strings are anagrams</h1>
+    <h2 id="hello"></h2>
+
+    <script>
+        function isAnagram(str1, str2) {
+            const s1 = str1.replace(/\s+/g, '').toLowerCase();
+            const s2 = str2.replace(/\s+/g, '').toLowerCase();
+
+            if (s1.length !== s2.length) {
+                return false
+            }
+
+            return s1.split('').sort().join('') === s2.split('').sort().join('');
+        }
+
+        console.log(isAnagram("listen", "silent"));
+        console.log(isAnagram("hello", "world"));
+        console.log(isAnagram("Dormitory", "Dirtyroom"));
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-19</title>
+</head>
+<body>
+    <!-- 19. Create a program to count the frequency of each character in a string. -->
+     <h1>Count the frequency of each character in a string</h1>
+     <h2 id="hello"></h2>
+
+
+     <script>
+        function charFrequency(str){
+            let freq = {};
+
+            for (let char of str){
+                if (freq[char]){
+                    freq[char]++;
+                }else {
+                    freq[char] = 1;
+                }
+            }
+
+            return freq;
+        }
+
+        let input = "hello world";
+
+        console.log(charFrequency(input));
+
+        
+        
+     </script>
+</body>
+</html>

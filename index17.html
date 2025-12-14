@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-17</title>
+</head>
+<body>
+    <!-- 17. Create a function that returns the reverse of a string. -->
+
+    <h1>a function that returns the reverse of a string</h1>
+    <p>The String is: "Rahul".</p>
+    <h2 id="hello"></h2>
+
+    <script>
+        let str = "Rahul";
+
+        function reverseString(str){
+            return str.split("").reverse().join("");
+        }
+
+        console.log(reverseString("Rahul"));
+
+        document.getElementById('hello').innerHTML = ` <p>Reverse of a string is: ${reverseString("Rahul")}</p>`;
+        
+    </script>
+</body>
+</html>
